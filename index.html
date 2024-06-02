@@ -36,10 +36,25 @@
         .content {
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 30px; /* Adjusted padding to move text up */
             position: relative;
-            top: 50%;
+            top: 40%; /* Adjusted position to move text up */
             transform: translateY(-50%);
+        }
+        
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -47,6 +62,7 @@
     <div class="content">
         <h1>Welcome to Our Website</h1>
         <p>This is a responsive background image example.</p>
+        <a href="https://www.example.com" class="button">Visit Us</a>
     </div>
 </body>
 </html>
