@@ -9,37 +9,34 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         
         /* Desktop background image. */
         @media (min-width: 768px) {
             body {
-                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 100vh;
+                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true');
             }
         }
         
         /* Mobile background image */
         @media (max-width: 767px) {
             body {
-                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 100vh;
+                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true');
             }
         }
         
         .content {
             color: white;
-            text-align: center;
             padding: 30px; /* Adjusted padding to move text up */
             position: relative;
-            top: 40%; /* Adjusted position to move text up */
-            transform: translateY(-50%);
         }
         
         .button {
