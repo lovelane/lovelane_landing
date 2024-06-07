@@ -1,65 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Background Image</title>
-    <style>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover; /* Changed from contain to cover */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    /* Desktop background image. */
+    @media (min-width: 768px) {
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true');
         }
-        
-        /* Desktop background image. */
-        @media (min-width: 768px) {
-            body {
-                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true');
-            }
+    }
+    
+    /* Mobile background image */
+    @media (max-width: 767px) {
+        body {
+            background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true');
         }
-        
-        /* Mobile background image */
-        @media (max-width: 767px) {
-            body {
-                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true');
-            }
-        }
-        
-        .content {
-            color: white;
-            padding: 30px; /* Adjusted padding to move text up */
-            position: relative;
-        }
-        
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a responsive background image example.</p>
-        <a href="signup.html" class="button">Join waitlist</a>
-    </div>
-</body>
-</html>
+    }
+    
+    .content {
+        color: white;
+        padding: 30px; /* Adjusted padding to move text up */
+        position: relative;
+    }
+    
+    .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .button:hover {
+        background-color: #0056b3;
+    }
+</style>
