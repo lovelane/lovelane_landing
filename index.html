@@ -55,18 +55,12 @@
         }
     </style>
     <script>
-        function adjustBackgroundSize() {
-            const aspectRatio = window.innerWidth / window.innerHeight;
-            const imageAspectRatio = 1920 / 1080; // Change these values based on your image's aspect ratio
-            if (aspectRatio >= imageAspectRatio) {
-                document.body.style.backgroundSize = "100% auto";
-            } else {
-                document.body.style.backgroundSize = "auto 100%";
-            }
-        }
-
-        window.addEventListener('resize', adjustBackgroundSize);
-        window.addEventListener('load', adjustBackgroundSize);
+        window.addEventListener('resize', function() {
+            document.body.style.minHeight = (window.innerHeight + 1) + "px";
+            setTimeout(() => {
+                document.body.style.minHeight = window.innerHeight + "px";
+            }, 50);
+        });
     </script>
 </head>
 <body>
