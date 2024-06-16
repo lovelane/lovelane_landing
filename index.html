@@ -6,6 +6,10 @@
     <title>Responsive Background Image</title>
     <!-- Favicon link -->
     <link rel="icon" type="image/png" href="https://github.com/lovelane/lovelane_landing/blob/main/Favicon%20png.png?raw=true">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- Similar alternative if 'Shiratama Dango' is not available -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -51,11 +55,18 @@
             z-index: 1;
         }
 
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 2;
+        h1 {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 161px; /* as specified */
+            line-height: 160px; /* as specified */
+            color: #0065ab; /* as specified */
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif; /* similar to 'Shiratama Dango' */
+            font-size: 106px; /* as specified */
+            line-height: 156px; /* as specified */
+            color: #0065ab; /* as specified */
         }
 
         .button {
@@ -83,11 +94,4 @@
     </script>
 </head>
 <body>
-    <img src="https://github.com/lovelane/lovelane_landing/blob/main/SoyandMochi%20Logo.png?raw=true" alt="Logo" class="logo">
-    <div class="content">
-        <h1>The new adventurous couple game you play with your partner</h1>
-        <p>Explore, learn and grow your relationship.</p>
-        <a href="signup.html" class="button">Join waitlist</a>
-    </div>
-</body>
-</html>
+    <img
