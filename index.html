@@ -16,7 +16,7 @@
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
-            align-items: flex-start; /* Aligns items to the top of the viewport */
+            align-items: flex-start;
             justify-content: center;
             text-align: center;
             background-size: cover;
@@ -26,34 +26,9 @@
             background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true'); /* Default desktop image */
         }
 
-        @media (max-width: 768px) {
-            /* Mobile devices */
-            body {
-                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true'); /* Mobile image */
-            }
-            .logo {
-                width: 168px; /* Reduced logo width by 30% */
-            }
-            .content {
-                padding-top: 90px; /* Adjusted content padding for mobile */
-            }
-            h1 {
-                font-size: 32.2px; /* 30% smaller than desktop */
-                line-height: 35px;
-            }
-            p {
-                font-size: 18.48px; /* 30% smaller */
-                line-height: 21px;
-            }
-            .button {
-                font-size: 18.2px; /* 30% smaller */
-                padding: 9px 18px;
-            }
-        }
-
         .logo {
             position: absolute;
-            top: 0px; /* Adjusted for 20% increase in size */
+            top: 0px;
             left: 10px;
             z-index: 2;
             width: 240px; /* Increased width by 20% */
@@ -75,7 +50,7 @@
             text-shadow: -3px 4px 0px #0065ab;
             word-wrap: break-word;
             font-weight: 700;
-            letter-spacing: 1px; /* Adds 1px spacing between letters */
+            letter-spacing: 1px;
         }
 
         p {
@@ -89,18 +64,42 @@
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 13px 26px; /* Slightly bigger button */
+            padding: 13px 26px;
             background-color: rgb(226, 135, 61);
             color: white;
             text-decoration: none;
             border-radius: 7px;
-            font-size: 26px; /* Increased font size for visibility */
+            font-size: 26px;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
         }
 
         .button:hover {
             background-color: #e57c34;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true'); /* Mobile image */
+            }
+            .logo {
+                width: 168px; /* Reduced logo width by 30% */
+            }
+            .content {
+                padding-top: 90px; /* Adjusted content padding for mobile */
+            }
+            h1 {
+                font-size: 32.2px; /* 30% smaller than desktop */
+                line-height: 35px;
+            }
+            p {
+                font-size: 18.48px; /* 30% smaller */
+                line-height: 21px;
+            }
+            .button {
+                font-size: 18.2px; /* 30% smaller */
+                padding: 9px 18px;
+            }
         }
     </style>
 </head>
