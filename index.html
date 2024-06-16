@@ -16,26 +16,33 @@
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
-            align-items: flex-start; /* Aligns items to the top of the viewport */
+            align-items: flex-start;
             justify-content: center;
             text-align: center;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
-            background-image: url('https://raw.githubusercontent.com/lovelane/lovelane_landing/438172822fbe1c64549a019059ad1906ca2c4269/pc%20background%20no%20logo.svg');
+            background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20pc%20background%20no%20logo.png?raw=true'); /* Default desktop image */
+        }
+
+        @media (max-width: 768px) {
+            /* Mobile devices */
+            body {
+                background-image: url('https://github.com/lovelane/lovelane_landing/blob/main/PNG%20mobile%20background%20no%20logo.png?raw=true'); /* Mobile image */
+            }
         }
 
         .logo {
             position: absolute;
-            top: 0px; /* Adjusted for 20% increase in size */
+            top: 0px;
             left: 10px;
             z-index: 2;
-            width: 240px; /* Increased width by 20% */
+            width: 240px;
         }
 
         .content {
-            padding-top: 160px; /* Increased padding to move content down*/
+            padding-top: 140px;
             position: relative;
             z-index: 1;
             width: 100%;
@@ -50,7 +57,7 @@
             text-shadow: -3px 4px 0px #0065ab;
             word-wrap: break-word;
             font-weight: 700; 
-            letter-spacing: 1px; /* Adds 1px spacing between letters */
+            letter-spacing: 1px;
         }
 
         p {
@@ -64,12 +71,12 @@
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 13px 26px; /* Slightly bigger button */
+            padding: 13px 26px;
             background-color: rgb(226, 135, 61);
             color: white;
             text-decoration: none;
             border-radius: 7px;
-            font-size: 26px; /* Increased font size for visibility */
+            font-size: 26px;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
         }
