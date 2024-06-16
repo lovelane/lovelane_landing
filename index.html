@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="https://github.com/lovelane/lovelane_landing/blob/main/Favicon%20png.png?raw=true">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -25,28 +24,6 @@
             position: relative;
         }
 
-        /* Desktop background image. */
-        @media (min-width: 768px) {
-            body {
-                background-image: url('https://raw.githubusercontent.com/lovelane/lovelane_landing/438172822fbe1c64549a019059ad1906ca2c4269/pc%20background%20no%20logo.svg');
-            }
-
-            .logo {
-                width: 325px; /* Adjusted size for desktop */
-            }
-        }
-
-        /* Mobile background image */
-        @media (max-width: 767px) {
-            body {
-                background-image: url('https://raw.githubusercontent.com/lovelane/lovelane_landing/438172822fbe1c64549a019059ad1906ca2c4269/mobile%20background%20no%20logo.svg');
-            }
-
-            .logo {
-                width: 195px; /* Adjusted size for mobile */
-            }
-        }
-
         .logo {
             position: absolute;
             top: 10px;
@@ -55,22 +32,26 @@
         }
 
         .content {
-            padding-top: 120px; /* Adjusted for header position */
+            padding-top: 120px;
             position: relative;
             z-index: 1;
+            width: 100%; /* Ensures content uses full width for centering */
+            max-width: 960px; /* Controls the maximum width of the text content */
         }
 
         h1 {
             font-family: 'Fredoka One', sans-serif;
             font-size: 57.6px; /* Increased by 20% */
             line-height: 60px;
-            color: #0065ab;
-            margin-bottom: 20px; /* Space between header and subheader */
+            color: white; /* Text color */
+            text-shadow: -2px -2px 0 #0065ab, 2px -2px 0 #0065ab, -2px 2px 0 #0065ab, 2px 2px 0 #0065ab; /* Outline effect */
+            margin-bottom: 20px;
+            word-wrap: break-word; /* Ensures text wraps */
         }
 
         p {
             font-family: 'Roboto', sans-serif;
-            font-size: 26.4px; /* Increased by 10% */
+            font-size: 26.4px;
             line-height: 30px;
             color: #0065ab;
         }
@@ -78,33 +59,25 @@
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10.5px 21px; /* Reduced by 30% */
-            background-color: rgb(226, 135, 61); /* Orange color */
+            padding: 10.5px 21px;
+            background-color: rgb(226, 135, 61);
             color: white;
             text-decoration: none;
-            border-radius: 7px; /* Slightly more rounded corners */
-            font-size: 33.6px; /* Reduced by 30% */
+            border-radius: 7px;
+            font-size: 33.6px;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
         }
 
         .button:hover {
-            background-color: #e57c34; /* Darker shade of orange for hover effect */
+            background-color: #e57c34;
         }
     </style>
-    <script>
-        window.addEventListener('resize', function() {
-            document.body.style.minHeight = (window.innerHeight + 1) + "px";
-            setTimeout(() => {
-                document.body.style.minHeight = window.innerHeight + "px";
-            }, 50);
-        });
-    </script>
 </head>
 <body>
     <img src="https://github.com/lovelane/lovelane_landing/blob/main/SoyandMochi%20Logo.png?raw=true" alt="Logo" class="logo">
     <div class="content">
-        <h1>The new adventurous couple game you play with your partner</h1>
+        <h1>The new adventurous couple game<br>you play with your partner</h1>
         <p>Explore, learn and grow your relationship.</p>
         <a href="signup.html" class="button">Join waitlist</a>
     </div>
