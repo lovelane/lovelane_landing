@@ -62,4 +62,32 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #007BFF
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        window.addEventListener('resize', function() {
+            document.body.style.minHeight = (window.innerHeight + 1) + "px";
+            setTimeout(() => {
+                document.body.style.minHeight = window.innerHeight + "px";
+            }, 50);
+        });
+    </script>
+</head>
+<body>
+    <img src="https://github.com/lovelane/lovelane_landing/blob/main/SoyandMochi%20Logo.png?raw=true" alt="Logo" class="logo">
+    <div class="content">
+        <h1>The new adventurous couple game you play with your partner</h1>
+        <p>Explore, learn and grow your relationship.</p>
+        <a href="signup.html" class="button">Join waitlist</a>
+    </div>
+</body>
+</html>
