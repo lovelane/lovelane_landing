@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="https://github.com/lovelane/lovelane_landing/blob/main/Favicon%20png.png?raw=true">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"> <!-- Comfortaa font -->
     <style>
         body {
             margin: 0;
@@ -30,11 +31,11 @@
             top: 10px;
             left: 10px;
             z-index: 2;
-            width: 200px; /* Increased size */
+            width: 200px;
         }
 
         .content {
-            padding-top: 80px; /* Moved text and button up */
+            padding-top: 60px; /* Move up */
             position: relative;
             z-index: 1;
             width: 100%;
@@ -46,13 +47,14 @@
             font-size: 46px;
             line-height: 50px;
             color: white;
-            text-shadow: -3px -3px 0 #0065ab, 3px -3px 0 #0065ab, -3px 3px 0 #0065ab, 3px 3px 0 #0065ab; /* Thicker blue outline */
+            text-shadow: 3px 3px 0px #0065ab; /* Adjust shadow to be cleaner */
             word-wrap: break-word;
         }
 
         p {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Comfortaa', sans-serif; /* Use Comfortaa font */
             font-size: 26.4px;
+            font-weight: 700; /* Bold weight */
             line-height: 30px;
             color: #0065ab;
         }
@@ -60,13 +62,13 @@
         .button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10.5px 21px;
+            padding: 5.25px 10.5px; /* Adjust padding according to new font size */
             background-color: rgb(226, 135, 61);
             color: white;
             text-decoration: none;
             border-radius: 7px;
-            font-size: 33.6px;
-            font-family: 'Roboto', sans-serif;
+            font-size: 16.8px; /* 50% smaller */
+            font-family: 'Roboto', sans-serif; /* Retaining Roboto for button */
             font-weight: bold;
         }
 
