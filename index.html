@@ -27,12 +27,20 @@
             body {
                 background-image: url('https://raw.githubusercontent.com/lovelane/lovelane_landing/438172822fbe1c64549a019059ad1906ca2c4269/pc%20background%20no%20logo.svg');
             }
+
+            .logo {
+                width: 250px; /* Adjusted size for desktop */
+            }
         }
 
         /* Mobile background image */
         @media (max-width: 767px) {
             body {
                 background-image: url('https://raw.githubusercontent.com/lovelane/lovelane_landing/438172822fbe1c64549a019059ad1906ca2c4269/mobile%20background%20no%20logo.svg');
+            }
+
+            .logo {
+                width: 150px; /* Adjusted size for mobile */
             }
         }
 
@@ -47,7 +55,6 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 150px; /* Adjust as needed */
             z-index: 2;
         }
 
@@ -55,32 +62,4 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-    <script>
-        window.addEventListener('resize', function() {
-            document.body.style.minHeight = (window.innerHeight + 1) + "px";
-            setTimeout(() => {
-                document.body.style.minHeight = window.innerHeight + "px";
-            }, 50);
-        });
-    </script>
-</head>
-<body>
-    <img src="https://github.com/lovelane/lovelane_landing/blob/main/SoyandMochi%20Logo.png?raw=true" alt="Logo" class="logo">
-    <div class="content">
-        <h1>The new adventurous couple game you play with your partner</h1>
-        <p>Explore, learn and grow your relationship.</p>
-        <a href="signup.html" class="button">Join waitlist</a>
-    </div>
-</body>
-</html>
+            background-color: #007BFF
