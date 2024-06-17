@@ -28,7 +28,7 @@
             overflow: hidden; /* Ensures no internal scroll bars are shown */
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Aligns items to the start (left) */
         }
 
         iframe {
@@ -39,14 +39,14 @@
 
         .back-button {
             display: block; /* Ensures the button is in block format */
-            width: max-content; /* Button width to fit its content */
-            margin: 10px auto; /* Auto margins for horizontal centering */
+            margin: 10px 0; /* Margin on top and bottom for spacing, no auto margin for horizontal centering */
             padding: 10px 20px;
             background-color: #007BFF; /* Button color */
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
+            text-align: center; /* Ensures text is centered inside the button */
         }
 
         .back-button:hover {
