@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://github.com/lovelane/lovelane_landing/blob/main/Favicon%20png.png?raw=true" type="image/png">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #e5eff5; /* Adjusted to match the form background color */
+            background-color: #e5eff5; /* Light blue to match the Google Forms theme */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,29 +21,29 @@
         .container {
             width: 100%;
             max-width: 640px;
-            padding: 20px;
-            background: #f1f9ff; /* Color adjusted to match the form's header color */
+            background: #f1f9ff; /* Slightly off white to match the Google Forms header */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            border: 1px solid #d3e2ea; /* Soft border to match Google Forms style */
+            border: 1px solid #d3e2ea; /* Light blue border to match Google Forms style */
+            overflow: hidden; /* Ensures no internal scroll bars are shown */
         }
 
         iframe {
             width: 100%;
-            height: 688px; /* Height adjusted to ensure no overflow */
-            border: none; /* Remove border for seamless integration */
-            overflow: hidden; /* Hide scrollbars */
+            height: 100%; /* Adjusted to take full height of the container */
+            border: none; /* Ensures no border around the iframe */
         }
 
         .back-button {
-            display: inline-block;
-            margin-bottom: 20px;
+            display: block; /* Changed to block for better control */
+            margin: 10px auto; /* Centers the button with automatic margin */
             padding: 10px 20px;
-            background-color: #007BFF; /* This color can be adjusted if needed */
+            background-color: #007BFF; /* Primary button color */
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
+            text-align: center; /* Ensures text is centered */
         }
 
         .back-button:hover {
