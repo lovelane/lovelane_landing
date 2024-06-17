@@ -11,39 +11,42 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #e5eff5; /* Light blue to match the Google Forms theme */
+            background-color: #e5eff5; /* Adjusted to match the form background color */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Use min-height to ensure full viewport height */
         }
 
         .container {
             width: 100%;
-            max-width: 640px;
-            background: #f1f9ff; /* Slightly off white to match the Google Forms header */
+            max-width: 640px; /* Container max width */
+            padding: 20px;
+            background: #f1f9ff; /* Color adjusted to match the form's header */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            border: 1px solid #d3e2ea; /* Light blue border to match Google Forms style */
             overflow: hidden; /* Ensures no internal scroll bars are shown */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         iframe {
-            width: 100%;
-            height: 100%; /* Adjusted to take full height of the container */
-            border: none; /* Ensures no border around the iframe */
+            width: 100%; /* Full width of the container */
+            min-height: 700px; /* Minimum height to avoid too small appearance */
+            border: none; /* No border for a seamless look */
         }
 
         .back-button {
-            display: block; /* Changed to block for better control */
-            margin: 10px auto; /* Centers the button with automatic margin */
+            display: block; /* Ensures the button is in block format */
+            width: max-content; /* Button width to fit its content */
+            margin: 10px auto; /* Auto margins for horizontal centering */
             padding: 10px 20px;
-            background-color: #007BFF; /* Primary button color */
+            background-color: #007BFF; /* Button color */
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            text-align: center; /* Ensures text is centered */
         }
 
         .back-button:hover {
